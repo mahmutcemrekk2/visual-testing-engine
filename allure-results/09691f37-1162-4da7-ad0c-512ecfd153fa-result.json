@@ -1,0 +1,58 @@
+{
+  "uuid": "09691f37-1162-4da7-ad0c-512ecfd153fa",
+  "name": "[Mevduat] deposit_landing",
+  "status": "passed",
+  "statusDetails": {
+    "message": "ACCEPTABLE_CHANGE - Footer alanına yeni elementler (mobil uygulama linkleri, sosyal medya ikonları ve güvenlik logoları) eklenmiş ve kart sıralaması değişmiş; sayfa düzeninde bir bozulma bulunmuyor.",
+    "trace": "URL: https://web.qa.hesap.com/mevduat-faizi-hesaplama\nDiff: %0.75 (43551 piksel)\nAI Kararı: ACCEPTABLE_CHANGE - Footer alanına yeni elementler (mobil uygulama linkleri, sosyal medya ikonları ve güvenlik logoları) eklenmiş ve kart sıralaması değişmiş; sayfa düzeninde bir bozulma bulunmuyor."
+  },
+  "start": 1774822466994,
+  "stop": 1774822507353,
+  "labels": [
+    {
+      "name": "suite",
+      "value": "Mevduat"
+    },
+    {
+      "name": "feature",
+      "value": "Mevduat"
+    },
+    {
+      "name": "story",
+      "value": "deposit_landing"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "tag",
+      "value": "visual-regression"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "URL",
+      "value": "https://web.qa.hesap.com/mevduat-faizi-hesaplama"
+    },
+    {
+      "name": "Diff %",
+      "value": "%0.75"
+    },
+    {
+      "name": "Diff Piksel",
+      "value": "43551"
+    },
+    {
+      "name": "AI Provider",
+      "value": "GEMINI"
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Diff: Baseline | Highlighted | Current",
+      "source": "09691f37-1162-4da7-ad0c-512ecfd153fa-diff-attachment.png",
+      "type": "image/png"
+    }
+  ]
+}

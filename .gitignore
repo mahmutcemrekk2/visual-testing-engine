@@ -1,0 +1,18 @@
+# node_modules
+node_modules/
+
+# Environment variables - NEVER commit this
+.env
+
+# Screenshot artifacts - only baseline goes to git
+screenshots/**/current.png
+screenshots/**/diff.png
+
+# Dashboard temp files
+screenshots/**/preview.png
+
+# OS files
+.DS_Store
+
+# LinkedIn Carousel Presentation
+linkedin-carousel/

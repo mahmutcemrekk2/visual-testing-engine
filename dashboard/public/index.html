@@ -1,0 +1,77 @@
+<!DOCTYPE strict html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Testing Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">Test Engine</div>
+        <ul class="nav">
+            <li class="active">📝 Yeni Test Oluştur</li>
+            <li>📂 Mevcut Testler <small>(Yakında)</small></li>
+            <li>▶️ Run All <small>(Yakında)</small></li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <h1>Yeni Test Senaryosu Oluştur</h1>
+            <p>Bir URL girin, ekran görüntüsünü alın ve AI kurallarınızı görsel olarak ekleyin.</p>
+        </header>
+
+        <div class="test-builder">
+            <div class="form-group">
+                <div class="folder-selector">
+                    <select id="folderSelect">
+                        <option value="">📂 Klasör Seç...</option>
+                    </select>
+                    <input type="text" id="newFolderInput" placeholder="+ Yeni klasör adı" style="display:none;" />
+                    <button id="newFolderToggle" class="btn-small btn-outline" title="Yeni Klasör">📁 +</button>
+                </div>
+                <input type="text" id="testName" placeholder="Test Adı (örn: credit_page)" />
+                <input type="url" id="testUrl" placeholder="URL (örn: https://web.qa.hesap.com/kredi)" />
+                <input type="text" id="waitSelector" placeholder="Wait Selector (örn: h1 veya 3000)" />
+                <button id="captureBtn" class="btn-primary">📸 Görseli Getir (Capture)</button>
+            </div>
+
+            <div class="workspace-area" id="workspaceArea" style="display: none;">
+                <div class="canvas-container" id="canvasContainer">
+                    <div class="canvas-toolbar">
+                        <button class="tool-btn active" data-tool="rect">🟥 Kutu</button>
+                        <button class="tool-btn" data-tool="circle">⭕ Daire</button>
+                        <button class="tool-btn" data-tool="arrow">↗️ Ok</button>
+                    </div>
+
+                    <img id="screenshotImg" src="" alt="Screenshot" />
+                    <canvas id="annotationCanvas"></canvas>
+                    
+                    <!-- Kutu çizilince çıkacak olan küçük popup -->
+                    <div id="rulePopup" class="rule-popup" style="display: none;">
+                        <input type="text" id="popupRuleInput" placeholder="Bu alan için kural ne?" />
+                        <button id="popupSaveBtn" class="btn-success btn-small">Ekle</button>
+                    </div>
+                </div>
+                
+                <div class="toolbox">
+                    <h3>🛠️ Kurallar (AI Rules)</h3>
+                    <div id="rulesList" class="rules-list"></div>
+                    <!-- Manuel ekleme alanı kapatıldı, artık görselden çizilecek -->
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Ekranda bir kutu çizerek kural ekleyin.</p>
+                    <button id="saveScenarioBtn" class="btn-success" style="margin-top: auto;">💾 Senaryoyu Kaydet</button>
+                </div>
+            </div>
+            
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Playwright çalışıyor, görsel alınıyor...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

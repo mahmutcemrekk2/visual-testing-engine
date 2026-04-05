@@ -1,0 +1,11 @@
+[
+  {
+    "name": "credit_page",
+    "url": "https://web.qa.hesap.com/kredi",
+    "waitSelector": "h1",
+    "rules": [
+      "Fiyat ve oran bilgilerindeki her türlü değişim kritik hatadır.",
+      "Hesaplama araçlarındaki butonların konumu değişmemelidir."
+    ]
+  }
+]
