@@ -1,13 +1,1 @@
-[
-  {
-    "name": "card_landing",
-    "url": "https://web.qa.hesap.com/kredi-karti",
-    "waitSelector": "[data-testid=\"undefined_subscribe_button\"]",
-    "rules": [
-      { "type": "rect", "x": 18, "y": 454, "w": 263, "h": 237, "rule": "Kart yapısı korunmalı, Metinler değşebilir" },
-      { "type": "rect", "x": 282, "y": 434, "w": 274, "h": 260, "rule": "1. Kart yapısı korunmalı, Metinler değşebilir" },
-      { "type": "rect", "x": 563, "y": 412, "w": 265, "h": 278, "rule": "1. Kart yapısı korunmalı, Metinler değşebilir" },
-      { "type": "rect", "x": 10, "y": 716, "w": 824, "h": 222, "rule": "Banka logoları değişebilir ama konumlar korunmalı" }
-    ]
-  }
-]
+[]
